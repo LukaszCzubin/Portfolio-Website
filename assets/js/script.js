@@ -23,6 +23,10 @@ function showPortfolio() {
     document.getElementById("resume").classList.remove("active");
 }
 
+function showContact(){
+  alert("Jeszcze nie skończony!")
+}
+
 const sidebar = document.getElementById("sidebarek");
 const sidebarBtn = document.getElementById("sidebar-btn");
 
@@ -38,7 +42,7 @@ const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 select.addEventListener("click", function () { elementToggleFunc(this); });
 
-// add event in all select items
+
 for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
 
@@ -50,7 +54,6 @@ for (let i = 0; i < selectItems.length; i++) {
   });
 }
 
-// filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
@@ -69,7 +72,7 @@ const filterFunc = function (selectedValue) {
 
 }
 
-// add event in all filter button items for large screen
+
 let lastClickedBtn = filterBtn[0];
 
 for (let i = 0; i < filterBtn.length; i++) {
